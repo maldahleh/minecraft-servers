@@ -7,26 +7,26 @@ class StoredServer: Object, ObjectKeyIdentifiable {
     var serverData: Server?
 
     func getIp() -> String {
-        guard let serverData = serverData else {
+        guard let serverData = serverData, let hostname = serverData.hostname else {
             return ip
         }
         
-        return serverData.hostname
+        return hostname
     }
 
     func getPlayerCount() -> String {
-        guard let serverData = serverData else {
+        guard let serverData = serverData, let players = serverData.players else {
             return "Loading..."
         }
         
-        return "\(serverData.players.online)/\(serverData.players.max)"
+        return "\(players.online)/\(players.max)"
     }
 
     func getVersion() -> String {
-        guard let serverData = serverData else {
+        guard let serverData = serverData, let version = serverData.version else {
             return "Loading..."
         }
         
-        return serverData.version
+        return version
     }
 }
