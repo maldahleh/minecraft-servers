@@ -11,8 +11,6 @@
 		4A75EB13292017570091B8BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB12292017570091B8BB /* ContentView.swift */; };
 		4A75EB15292017580091B8BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A75EB14292017580091B8BB /* Assets.xcassets */; };
 		4A75EB18292017580091B8BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A75EB17292017580091B8BB /* Preview Assets.xcassets */; };
-		4A75EB1A292017580091B8BB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB19292017580091B8BB /* Persistence.swift */; };
-		4A75EB1D292017580091B8BB /* minecraftservers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB1B292017580091B8BB /* minecraftservers.xcdatamodeld */; };
 		4A75EB28292017590091B8BB /* minecraftserversTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB27292017590091B8BB /* minecraftserversTests.swift */; };
 		4A75EB32292017590091B8BB /* minecraftserversUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB31292017590091B8BB /* minecraftserversUITests.swift */; };
 		4A75EB34292017590091B8BB /* minecraftserversUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB33292017590091B8BB /* minecraftserversUITestsLaunchTests.swift */; };
@@ -23,6 +21,8 @@
 		4A75EB4C2920210C0091B8BB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4A75EB4B2920210C0091B8BB /* .gitignore */; };
 		4A75EB4E292021C60091B8BB /* ServerStatusAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB4D292021C60091B8BB /* ServerStatusAPI.swift */; };
 		4A75EB502920247A0091B8BB /* StoredServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB4F2920247A0091B8BB /* StoredServer.swift */; };
+		4A75EB532920281C0091B8BB /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4A75EB522920281C0091B8BB /* Realm */; };
+		4A75EB552920281C0091B8BB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4A75EB542920281C0091B8BB /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +48,6 @@
 		4A75EB12292017570091B8BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4A75EB14292017580091B8BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A75EB17292017580091B8BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4A75EB19292017580091B8BB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		4A75EB1C292017580091B8BB /* minecraftservers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = minecraftservers.xcdatamodel; sourceTree = "<group>"; };
 		4A75EB1E292017580091B8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A75EB23292017590091B8BB /* minecraftserversTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = minecraftserversTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A75EB27292017590091B8BB /* minecraftserversTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minecraftserversTests.swift; sourceTree = "<group>"; };
@@ -69,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A75EB552920281C0091B8BB /* RealmSwift in Frameworks */,
+				4A75EB532920281C0091B8BB /* Realm in Frameworks */,
 				4A75EB422920196F0091B8BB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,9 +119,7 @@
 				4A75EB10292017570091B8BB /* minecraftserversApp.swift */,
 				4A75EB12292017570091B8BB /* ContentView.swift */,
 				4A75EB14292017580091B8BB /* Assets.xcassets */,
-				4A75EB19292017580091B8BB /* Persistence.swift */,
 				4A75EB1E292017580091B8BB /* Info.plist */,
-				4A75EB1B292017580091B8BB /* minecraftservers.xcdatamodeld */,
 				4A75EB16292017580091B8BB /* Preview Content */,
 			);
 			path = minecraftservers;
@@ -189,6 +187,8 @@
 			name = minecraftservers;
 			packageProductDependencies = (
 				4A75EB412920196F0091B8BB /* Alamofire */,
+				4A75EB522920281C0091B8BB /* Realm */,
+				4A75EB542920281C0091B8BB /* RealmSwift */,
 			);
 			productName = minecraftservers;
 			productReference = 4A75EB0D292017570091B8BB /* minecraftservers.app */;
@@ -264,6 +264,7 @@
 			mainGroup = 4A75EB04292017570091B8BB;
 			packageReferences = (
 				4A75EB402920196F0091B8BB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4A75EB512920281C0091B8BB /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 4A75EB0E292017570091B8BB /* Products */;
 			projectDirPath = "";
@@ -310,8 +311,6 @@
 			files = (
 				4A75EB502920247A0091B8BB /* StoredServer.swift in Sources */,
 				4A75EB452920199D0091B8BB /* ServerType.swift in Sources */,
-				4A75EB1D292017580091B8BB /* minecraftservers.xcdatamodeld in Sources */,
-				4A75EB1A292017580091B8BB /* Persistence.swift in Sources */,
 				4A75EB4929201B710091B8BB /* Players.swift in Sources */,
 				4A75EB13292017570091B8BB /* ContentView.swift in Sources */,
 				4A75EB4E292021C60091B8BB /* ServerStatusAPI.swift in Sources */,
@@ -651,6 +650,14 @@
 				kind = branch;
 			};
 		};
+		4A75EB512920281C0091B8BB /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -659,20 +666,17 @@
 			package = 4A75EB402920196F0091B8BB /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-/* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		4A75EB1B292017580091B8BB /* minecraftservers.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				4A75EB1C292017580091B8BB /* minecraftservers.xcdatamodel */,
-			);
-			currentVersion = 4A75EB1C292017580091B8BB /* minecraftservers.xcdatamodel */;
-			path = minecraftservers.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+		4A75EB522920281C0091B8BB /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A75EB512920281C0091B8BB /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
 		};
-/* End XCVersionGroup section */
+		4A75EB542920281C0091B8BB /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A75EB512920281C0091B8BB /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4A75EB05292017570091B8BB /* Project object */;
 }

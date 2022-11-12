@@ -1,4 +1,7 @@
-struct StoredServer {
-    let ip: String
-    let serverType: ServerType
+import RealmSwift
+
+class StoredServer {
+    @Persisted(primaryKey: true) var _id: ObjectId
+    @Persisted var ip = ""
+    @Persisted var serverType = ServerType.java
 }
