@@ -24,7 +24,7 @@ struct ServerListView: View {
                         .foregroundColor(.gray)
                 }
                 ForEach(servers) { server in
-                    Text(server.ip)
+                    ServerRow(server: server)
                 }
                 addServerButton
             }

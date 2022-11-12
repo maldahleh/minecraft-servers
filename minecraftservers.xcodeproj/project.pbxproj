@@ -24,6 +24,8 @@
 		4A75EB532920281C0091B8BB /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4A75EB522920281C0091B8BB /* Realm */; };
 		4A75EB552920281C0091B8BB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4A75EB542920281C0091B8BB /* RealmSwift */; };
 		4A75EB58292031E70091B8BB /* ServerFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB57292031E70091B8BB /* ServerFormView.swift */; };
+		4A75EB5B292046D90091B8BB /* ServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB5A292046D90091B8BB /* ServerRow.swift */; };
+		4A75EB5E292048390091B8BB /* StoredServerMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB5D292048390091B8BB /* StoredServerMocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		4A75EB4D292021C60091B8BB /* ServerStatusAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusAPI.swift; sourceTree = "<group>"; };
 		4A75EB4F2920247A0091B8BB /* StoredServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredServer.swift; sourceTree = "<group>"; };
 		4A75EB57292031E70091B8BB /* ServerFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerFormView.swift; sourceTree = "<group>"; };
+		4A75EB5A292046D90091B8BB /* ServerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRow.swift; sourceTree = "<group>"; };
+		4A75EB5D292048390091B8BB /* StoredServerMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredServerMocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				4A75EB59292035C20091B8BB /* Network */,
+				4A75EB5C292048270091B8BB /* Mocks */,
 				4A75EB4F2920247A0091B8BB /* StoredServer.swift */,
 				4A75EB442920199D0091B8BB /* ServerType.swift */,
 			);
@@ -175,6 +180,7 @@
 			children = (
 				4A75EB12292017570091B8BB /* ServerListView.swift */,
 				4A75EB57292031E70091B8BB /* ServerFormView.swift */,
+				4A75EB5A292046D90091B8BB /* ServerRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +192,14 @@
 				4A75EB4829201B710091B8BB /* Players.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		4A75EB5C292048270091B8BB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4A75EB5D292048390091B8BB /* StoredServerMocks.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,7 +345,9 @@
 				4A75EB502920247A0091B8BB /* StoredServer.swift in Sources */,
 				4A75EB452920199D0091B8BB /* ServerType.swift in Sources */,
 				4A75EB4929201B710091B8BB /* Players.swift in Sources */,
+				4A75EB5B292046D90091B8BB /* ServerRow.swift in Sources */,
 				4A75EB13292017570091B8BB /* ServerListView.swift in Sources */,
+				4A75EB5E292048390091B8BB /* StoredServerMocks.swift in Sources */,
 				4A75EB4E292021C60091B8BB /* ServerStatusAPI.swift in Sources */,
 				4A75EB58292031E70091B8BB /* ServerFormView.swift in Sources */,
 				4A75EB4729201A200091B8BB /* Server.swift in Sources */,
