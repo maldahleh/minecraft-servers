@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  minecraftservers
-//
-//  Created by Mohammed Al-Dahleh on 2022-11-12.
-//
-
 import SwiftUI
 import CoreData
 

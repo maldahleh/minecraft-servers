@@ -16,6 +16,11 @@
 		4A75EB28292017590091B8BB /* minecraftserversTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB27292017590091B8BB /* minecraftserversTests.swift */; };
 		4A75EB32292017590091B8BB /* minecraftserversUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB31292017590091B8BB /* minecraftserversUITests.swift */; };
 		4A75EB34292017590091B8BB /* minecraftserversUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB33292017590091B8BB /* minecraftserversUITestsLaunchTests.swift */; };
+		4A75EB422920196F0091B8BB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4A75EB412920196F0091B8BB /* Alamofire */; };
+		4A75EB452920199D0091B8BB /* ServerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB442920199D0091B8BB /* ServerType.swift */; };
+		4A75EB4729201A200091B8BB /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB4629201A200091B8BB /* Server.swift */; };
+		4A75EB4929201B710091B8BB /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB4829201B710091B8BB /* Players.swift */; };
+		4A75EB4C2920210C0091B8BB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4A75EB4B2920210C0091B8BB /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,10 @@
 		4A75EB2D292017590091B8BB /* minecraftserversUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = minecraftserversUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A75EB31292017590091B8BB /* minecraftserversUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minecraftserversUITests.swift; sourceTree = "<group>"; };
 		4A75EB33292017590091B8BB /* minecraftserversUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minecraftserversUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A75EB442920199D0091B8BB /* ServerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerType.swift; sourceTree = "<group>"; };
+		4A75EB4629201A200091B8BB /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		4A75EB4829201B710091B8BB /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
+		4A75EB4B2920210C0091B8BB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A75EB422920196F0091B8BB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +89,7 @@
 		4A75EB04292017570091B8BB = {
 			isa = PBXGroup;
 			children = (
+				4A75EB4B2920210C0091B8BB /* .gitignore */,
 				4A75EB0F292017570091B8BB /* minecraftservers */,
 				4A75EB26292017590091B8BB /* minecraftserversTests */,
 				4A75EB30292017590091B8BB /* minecraftserversUITests */,
@@ -99,6 +110,8 @@
 		4A75EB0F292017570091B8BB /* minecraftservers */ = {
 			isa = PBXGroup;
 			children = (
+				4A75EB43292019780091B8BB /* Models */,
+				4A75EB4A292020C40091B8BB /* Networking */,
 				4A75EB10292017570091B8BB /* minecraftserversApp.swift */,
 				4A75EB12292017570091B8BB /* ContentView.swift */,
 				4A75EB14292017580091B8BB /* Assets.xcassets */,
@@ -135,6 +148,23 @@
 			path = minecraftserversUITests;
 			sourceTree = "<group>";
 		};
+		4A75EB43292019780091B8BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A75EB442920199D0091B8BB /* ServerType.swift */,
+				4A75EB4629201A200091B8BB /* Server.swift */,
+				4A75EB4829201B710091B8BB /* Players.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A75EB4A292020C40091B8BB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +181,9 @@
 			dependencies = (
 			);
 			name = minecraftservers;
+			packageProductDependencies = (
+				4A75EB412920196F0091B8BB /* Alamofire */,
+			);
 			productName = minecraftservers;
 			productReference = 4A75EB0D292017570091B8BB /* minecraftservers.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +256,9 @@
 				Base,
 			);
 			mainGroup = 4A75EB04292017570091B8BB;
+			packageReferences = (
+				4A75EB402920196F0091B8BB /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 4A75EB0E292017570091B8BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -240,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A75EB18292017580091B8BB /* Preview Assets.xcassets in Resources */,
+				4A75EB4C2920210C0091B8BB /* .gitignore in Resources */,
 				4A75EB15292017580091B8BB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,9 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A75EB452920199D0091B8BB /* ServerType.swift in Sources */,
 				4A75EB1D292017580091B8BB /* minecraftservers.xcdatamodeld in Sources */,
 				4A75EB1A292017580091B8BB /* Persistence.swift in Sources */,
+				4A75EB4929201B710091B8BB /* Players.swift in Sources */,
 				4A75EB13292017570091B8BB /* ContentView.swift in Sources */,
+				4A75EB4729201A200091B8BB /* Server.swift in Sources */,
 				4A75EB11292017570091B8BB /* minecraftserversApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +633,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A75EB402920196F0091B8BB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A75EB412920196F0091B8BB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A75EB402920196F0091B8BB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4A75EB1B292017580091B8BB /* minecraftservers.xcdatamodeld */ = {
