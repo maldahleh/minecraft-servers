@@ -1,10 +1,3 @@
-//
-//  minecraftserversTests.swift
-//  minecraftserversTests
-//
-//  Created by Mohammed Al-Dahleh on 2022-11-12.
-//
-
 import XCTest
 @testable import minecraftservers
 
