@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A75EB11292017570091B8BB /* minecraftserversApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB10292017570091B8BB /* minecraftserversApp.swift */; };
+		4A75EB13292017570091B8BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB12292017570091B8BB /* ContentView.swift */; };
+		4A75EB15292017580091B8BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A75EB14292017580091B8BB /* Assets.xcassets */; };
+		4A75EB18292017580091B8BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A75EB17292017580091B8BB /* Preview Assets.xcassets */; };
+		4A75EB1A292017580091B8BB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB19292017580091B8BB /* Persistence.swift */; };
+		4A75EB1D292017580091B8BB /* minecraftservers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB1B292017580091B8BB /* minecraftservers.xcdatamodeld */; };
+		4A75EB28292017590091B8BB /* minecraftserversTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB27292017590091B8BB /* minecraftserversTests.swift */; };
+		4A75EB32292017590091B8BB /* minecraftserversUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB31292017590091B8BB /* minecraftserversUITests.swift */; };
+		4A75EB34292017590091B8BB /* minecraftserversUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB33292017590091B8BB /* minecraftserversUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A75EB24292017590091B8BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A75EB05292017570091B8BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A75EB0C292017570091B8BB;
+			remoteInfo = minecraftservers;
+		};
+		4A75EB2E292017590091B8BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A75EB05292017570091B8BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A75EB0C292017570091B8BB;
+			remoteInfo = minecraftservers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A75EB0D292017570091B8BB /* minecraftservers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minecraftservers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A75EB10292017570091B8BB /* minecraftserversApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minecraftserversApp.swift; sourceTree = "<group>"; };
+		4A75EB12292017570091B8BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A75EB14292017580091B8BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A75EB17292017580091B8BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A75EB19292017580091B8BB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4A75EB1C292017580091B8BB /* minecraftservers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = minecraftservers.xcdatamodel; sourceTree = "<group>"; };
+		4A75EB1E292017580091B8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A75EB23292017590091B8BB /* minecraftserversTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = minecraftserversTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A75EB27292017590091B8BB /* minecraftserversTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minecraftserversTests.swift; sourceTree = "<group>"; };
+		4A75EB2D292017590091B8BB /* minecraftserversUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = minecraftserversUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A75EB31292017590091B8BB /* minecraftserversUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minecraftserversUITests.swift; sourceTree = "<group>"; };
+		4A75EB33292017590091B8BB /* minecraftserversUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minecraftserversUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A75EB0A292017570091B8BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A75EB20292017590091B8BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A75EB2A292017590091B8BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A75EB04292017570091B8BB = {
+			isa = PBXGroup;
+			children = (
+				4A75EB0F292017570091B8BB /* minecraftservers */,
+				4A75EB26292017590091B8BB /* minecraftserversTests */,
+				4A75EB30292017590091B8BB /* minecraftserversUITests */,
+				4A75EB0E292017570091B8BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A75EB0E292017570091B8BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A75EB0D292017570091B8BB /* minecraftservers.app */,
+				4A75EB23292017590091B8BB /* minecraftserversTests.xctest */,
+				4A75EB2D292017590091B8BB /* minecraftserversUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A75EB0F292017570091B8BB /* minecraftservers */ = {
+			isa = PBXGroup;
+			children = (
+				4A75EB10292017570091B8BB /* minecraftserversApp.swift */,
+				4A75EB12292017570091B8BB /* ContentView.swift */,
+				4A75EB14292017580091B8BB /* Assets.xcassets */,
+				4A75EB19292017580091B8BB /* Persistence.swift */,
+				4A75EB1E292017580091B8BB /* Info.plist */,
+				4A75EB1B292017580091B8BB /* minecraftservers.xcdatamodeld */,
+				4A75EB16292017580091B8BB /* Preview Content */,
+			);
+			path = minecraftservers;
+			sourceTree = "<group>";
+		};
+		4A75EB16292017580091B8BB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4A75EB17292017580091B8BB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4A75EB26292017590091B8BB /* minecraftserversTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A75EB27292017590091B8BB /* minecraftserversTests.swift */,
+			);
+			path = minecraftserversTests;
+			sourceTree = "<group>";
+		};
+		4A75EB30292017590091B8BB /* minecraftserversUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A75EB31292017590091B8BB /* minecraftserversUITests.swift */,
+				4A75EB33292017590091B8BB /* minecraftserversUITestsLaunchTests.swift */,
+			);
+			path = minecraftserversUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A75EB0C292017570091B8BB /* minecraftservers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A75EB37292017590091B8BB /* Build configuration list for PBXNativeTarget "minecraftservers" */;
+			buildPhases = (
+				4A75EB09292017570091B8BB /* Sources */,
+				4A75EB0A292017570091B8BB /* Frameworks */,
+				4A75EB0B292017570091B8BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = minecraftservers;
+			productName = minecraftservers;
+			productReference = 4A75EB0D292017570091B8BB /* minecraftservers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A75EB22292017590091B8BB /* minecraftserversTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A75EB3A292017590091B8BB /* Build configuration list for PBXNativeTarget "minecraftserversTests" */;
+			buildPhases = (
+				4A75EB1F292017590091B8BB /* Sources */,
+				4A75EB20292017590091B8BB /* Frameworks */,
+				4A75EB21292017590091B8BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A75EB25292017590091B8BB /* PBXTargetDependency */,
+			);
+			name = minecraftserversTests;
+			productName = minecraftserversTests;
+			productReference = 4A75EB23292017590091B8BB /* minecraftserversTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A75EB2C292017590091B8BB /* minecraftserversUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A75EB3D292017590091B8BB /* Build configuration list for PBXNativeTarget "minecraftserversUITests" */;
+			buildPhases = (
+				4A75EB29292017590091B8BB /* Sources */,
+				4A75EB2A292017590091B8BB /* Frameworks */,
+				4A75EB2B292017590091B8BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A75EB2F292017590091B8BB /* PBXTargetDependency */,
+			);
+			name = minecraftserversUITests;
+			productName = minecraftserversUITests;
+			productReference = 4A75EB2D292017590091B8BB /* minecraftserversUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A75EB05292017570091B8BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					4A75EB0C292017570091B8BB = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					4A75EB22292017590091B8BB = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 4A75EB0C292017570091B8BB;
+					};
+					4A75EB2C292017590091B8BB = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 4A75EB0C292017570091B8BB;
+					};
+				};
+			};
+			buildConfigurationList = 4A75EB08292017570091B8BB /* Build configuration list for PBXProject "minecraftservers" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A75EB04292017570091B8BB;
+			productRefGroup = 4A75EB0E292017570091B8BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A75EB0C292017570091B8BB /* minecraftservers */,
+				4A75EB22292017590091B8BB /* minecraftserversTests */,
+				4A75EB2C292017590091B8BB /* minecraftserversUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A75EB0B292017570091B8BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A75EB18292017580091B8BB /* Preview Assets.xcassets in Resources */,
+				4A75EB15292017580091B8BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A75EB21292017590091B8BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A75EB2B292017590091B8BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A75EB09292017570091B8BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A75EB1D292017580091B8BB /* minecraftservers.xcdatamodeld in Sources */,
+				4A75EB1A292017580091B8BB /* Persistence.swift in Sources */,
+				4A75EB13292017570091B8BB /* ContentView.swift in Sources */,
+				4A75EB11292017570091B8BB /* minecraftserversApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A75EB1F292017590091B8BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A75EB28292017590091B8BB /* minecraftserversTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A75EB29292017590091B8BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A75EB32292017590091B8BB /* minecraftserversUITests.swift in Sources */,
+				4A75EB34292017590091B8BB /* minecraftserversUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A75EB25292017590091B8BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A75EB0C292017570091B8BB /* minecraftservers */;
+			targetProxy = 4A75EB24292017590091B8BB /* PBXContainerItemProxy */;
+		};
+		4A75EB2F292017590091B8BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A75EB0C292017570091B8BB /* minecraftservers */;
+			targetProxy = 4A75EB2E292017590091B8BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4A75EB35292017590091B8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A75EB36292017590091B8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A75EB38292017590091B8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"minecraftservers/Preview Content\"";
+				DEVELOPMENT_TEAM = BK6SYNX968;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maldahleh.minecraftservers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A75EB39292017590091B8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"minecraftservers/Preview Content\"";
+				DEVELOPMENT_TEAM = BK6SYNX968;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maldahleh.minecraftservers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A75EB3B292017590091B8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BK6SYNX968;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maldahleh.minecraftserversTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/minecraftservers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/minecraftservers";
+			};
+			name = Debug;
+		};
+		4A75EB3C292017590091B8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BK6SYNX968;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maldahleh.minecraftserversTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/minecraftservers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/minecraftservers";
+			};
+			name = Release;
+		};
+		4A75EB3E292017590091B8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BK6SYNX968;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maldahleh.minecraftserversUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = minecraftservers;
+			};
+			name = Debug;
+		};
+		4A75EB3F292017590091B8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BK6SYNX968;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maldahleh.minecraftserversUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = minecraftservers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A75EB08292017570091B8BB /* Build configuration list for PBXProject "minecraftservers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A75EB35292017590091B8BB /* Debug */,
+				4A75EB36292017590091B8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A75EB37292017590091B8BB /* Build configuration list for PBXNativeTarget "minecraftservers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A75EB38292017590091B8BB /* Debug */,
+				4A75EB39292017590091B8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A75EB3A292017590091B8BB /* Build configuration list for PBXNativeTarget "minecraftserversTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A75EB3B292017590091B8BB /* Debug */,
+				4A75EB3C292017590091B8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A75EB3D292017590091B8BB /* Build configuration list for PBXNativeTarget "minecraftserversUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A75EB3E292017590091B8BB /* Debug */,
+				4A75EB3F292017590091B8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4A75EB1B292017580091B8BB /* minecraftservers.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4A75EB1C292017580091B8BB /* minecraftservers.xcdatamodel */,
+			);
+			currentVersion = 4A75EB1C292017580091B8BB /* minecraftservers.xcdatamodel */;
+			path = minecraftservers.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4A75EB05292017570091B8BB /* Project object */;
+}
