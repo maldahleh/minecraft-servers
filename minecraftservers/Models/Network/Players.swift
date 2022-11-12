@@ -1,4 +1,6 @@
-struct Players: Decodable {
-    let online: Int
-    let max: Int
+import RealmSwift
+
+class Players: Object, Decodable {
+    @Persisted var online: Int
+    @Persisted var max: Int
 }

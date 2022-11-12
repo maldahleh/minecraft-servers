@@ -1,7 +1,15 @@
 enum StoredServerMocks {
     private static var loadedData: Server {
-        let players = Players(online: 50, max: 100)
-        return Server(hostname: "mc.maldahleh.com", version: "1.18", players: players)
+        let players = Players()
+        players.online = 50
+        players.max = 100
+
+        let server = Server()
+        server.online = true
+        server.hostname = "mc.maldahleh.com"
+        server.version = "1.18"
+        server.players = players
+        return server
     }
 
     static var javaServer: StoredServer {

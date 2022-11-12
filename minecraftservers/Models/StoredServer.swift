@@ -1,11 +1,15 @@
+import Foundation
 import RealmSwift
 
 class StoredServer: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted var ip = ""
     @Persisted var serverType = ServerType.java
-    var serverData: Server?
+    @Persisted var serverData: Server?
+}
 
+// MARK - Getters
+extension StoredServer {
     func getIp() -> String {
         guard let serverData = serverData, let hostname = serverData.hostname else {
             return ip
@@ -19,7 +23,7 @@ class StoredServer: Object, ObjectKeyIdentifiable {
             return "Loading..."
         }
         
-        return "\(players.online)/\(players.max)"
+        return "\(formatNumber(players.online))/\(formatNumber(players.max))"
     }
 
     func getVersion() -> String {
@@ -28,5 +32,20 @@ class StoredServer: Object, ObjectKeyIdentifiable {
         }
         
         return version
+    }
+}
+
+// MARK - Utilities
+extension StoredServer {
+    private func formatNumber(_ value: Int) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+
+        let formattedNumber = numberFormatter.string(from: NSNumber(value: value))
+        guard let formattedNumber = formattedNumber else {
+            return "\(value)"
+        }
+
+        return formattedNumber
     }
 }

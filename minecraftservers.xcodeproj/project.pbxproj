@@ -23,6 +23,7 @@
 		4A75EB58292031E70091B8BB /* ServerFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB57292031E70091B8BB /* ServerFormView.swift */; };
 		4A75EB5B292046D90091B8BB /* ServerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB5A292046D90091B8BB /* ServerRow.swift */; };
 		4A75EB5E292048390091B8BB /* StoredServerMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB5D292048390091B8BB /* StoredServerMocks.swift */; };
+		4A75EB61292052080091B8BB /* DataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB60292052080091B8BB /* DataUpdater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		4A75EB57292031E70091B8BB /* ServerFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerFormView.swift; sourceTree = "<group>"; };
 		4A75EB5A292046D90091B8BB /* ServerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRow.swift; sourceTree = "<group>"; };
 		4A75EB5D292048390091B8BB /* StoredServerMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredServerMocks.swift; sourceTree = "<group>"; };
+		4A75EB60292052080091B8BB /* DataUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUpdater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				4A75EB5629202C4D0091B8BB /* Views */,
 				4A75EB43292019780091B8BB /* Models */,
 				4A75EB4A292020C40091B8BB /* Networking */,
+				4A75EB5F292051F80091B8BB /* Updater */,
 				4A75EB10292017570091B8BB /* minecraftserversApp.swift */,
 				4A75EB14292017580091B8BB /* Assets.xcassets */,
 				4A75EB1E292017580091B8BB /* Info.plist */,
@@ -159,6 +162,14 @@
 				4A75EB5D292048390091B8BB /* StoredServerMocks.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4A75EB5F292051F80091B8BB /* Updater */ = {
+			isa = PBXGroup;
+			children = (
+				4A75EB60292052080091B8BB /* DataUpdater.swift */,
+			);
+			path = Updater;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A75EB502920247A0091B8BB /* StoredServer.swift in Sources */,
+				4A75EB61292052080091B8BB /* DataUpdater.swift in Sources */,
 				4A75EB452920199D0091B8BB /* ServerType.swift in Sources */,
 				4A75EB4929201B710091B8BB /* Players.swift in Sources */,
 				4A75EB5B292046D90091B8BB /* ServerRow.swift in Sources */,
