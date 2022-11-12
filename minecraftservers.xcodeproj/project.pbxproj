@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A75EB11292017570091B8BB /* minecraftserversApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB10292017570091B8BB /* minecraftserversApp.swift */; };
-		4A75EB13292017570091B8BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB12292017570091B8BB /* ContentView.swift */; };
+		4A75EB13292017570091B8BB /* ServerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB12292017570091B8BB /* ServerListView.swift */; };
 		4A75EB15292017580091B8BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A75EB14292017580091B8BB /* Assets.xcassets */; };
 		4A75EB18292017580091B8BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A75EB17292017580091B8BB /* Preview Assets.xcassets */; };
 		4A75EB28292017590091B8BB /* minecraftserversTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB27292017590091B8BB /* minecraftserversTests.swift */; };
@@ -23,6 +23,7 @@
 		4A75EB502920247A0091B8BB /* StoredServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB4F2920247A0091B8BB /* StoredServer.swift */; };
 		4A75EB532920281C0091B8BB /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4A75EB522920281C0091B8BB /* Realm */; };
 		4A75EB552920281C0091B8BB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4A75EB542920281C0091B8BB /* RealmSwift */; };
+		4A75EB58292031E70091B8BB /* ServerFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB57292031E70091B8BB /* ServerFormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,7 @@
 /* Begin PBXFileReference section */
 		4A75EB0D292017570091B8BB /* minecraftservers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minecraftservers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A75EB10292017570091B8BB /* minecraftserversApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minecraftserversApp.swift; sourceTree = "<group>"; };
-		4A75EB12292017570091B8BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A75EB12292017570091B8BB /* ServerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListView.swift; sourceTree = "<group>"; };
 		4A75EB14292017580091B8BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A75EB17292017580091B8BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A75EB1E292017580091B8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		4A75EB4B2920210C0091B8BB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		4A75EB4D292021C60091B8BB /* ServerStatusAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusAPI.swift; sourceTree = "<group>"; };
 		4A75EB4F2920247A0091B8BB /* StoredServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredServer.swift; sourceTree = "<group>"; };
+		4A75EB57292031E70091B8BB /* ServerFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +116,10 @@
 		4A75EB0F292017570091B8BB /* minecraftservers */ = {
 			isa = PBXGroup;
 			children = (
+				4A75EB5629202C4D0091B8BB /* Views */,
 				4A75EB43292019780091B8BB /* Models */,
 				4A75EB4A292020C40091B8BB /* Networking */,
 				4A75EB10292017570091B8BB /* minecraftserversApp.swift */,
-				4A75EB12292017570091B8BB /* ContentView.swift */,
 				4A75EB14292017580091B8BB /* Assets.xcassets */,
 				4A75EB1E292017580091B8BB /* Info.plist */,
 				4A75EB16292017580091B8BB /* Preview Content */,
@@ -153,10 +155,9 @@
 		4A75EB43292019780091B8BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4A75EB4629201A200091B8BB /* Server.swift */,
+				4A75EB59292035C20091B8BB /* Network */,
 				4A75EB4F2920247A0091B8BB /* StoredServer.swift */,
 				4A75EB442920199D0091B8BB /* ServerType.swift */,
-				4A75EB4829201B710091B8BB /* Players.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,6 +168,24 @@
 				4A75EB4D292021C60091B8BB /* ServerStatusAPI.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		4A75EB5629202C4D0091B8BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A75EB12292017570091B8BB /* ServerListView.swift */,
+				4A75EB57292031E70091B8BB /* ServerFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A75EB59292035C20091B8BB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4A75EB4629201A200091B8BB /* Server.swift */,
+				4A75EB4829201B710091B8BB /* Players.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,8 +331,9 @@
 				4A75EB502920247A0091B8BB /* StoredServer.swift in Sources */,
 				4A75EB452920199D0091B8BB /* ServerType.swift in Sources */,
 				4A75EB4929201B710091B8BB /* Players.swift in Sources */,
-				4A75EB13292017570091B8BB /* ContentView.swift in Sources */,
+				4A75EB13292017570091B8BB /* ServerListView.swift in Sources */,
 				4A75EB4E292021C60091B8BB /* ServerStatusAPI.swift in Sources */,
+				4A75EB58292031E70091B8BB /* ServerFormView.swift in Sources */,
 				4A75EB4729201A200091B8BB /* Server.swift in Sources */,
 				4A75EB11292017570091B8BB /* minecraftserversApp.swift in Sources */,
 			);
