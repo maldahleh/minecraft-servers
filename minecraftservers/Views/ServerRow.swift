@@ -8,12 +8,10 @@ struct ServerRow: View {
     var body: some View {
         HStack {
             Button(action: openUpdateServer) {
-                Text(server.getIp())
-                    .padding(.horizontal, 4)
                 VStack(alignment: .leading) {
-                    Text(server.getPlayerCount())
+                    Text(server.getIp())
                         .font(.headline)
-                    Text(server.getVersion())
+                    Text(server.getPlayerCount())
                         .font(.subheadline)
                 }
                 .lineLimit(1)
