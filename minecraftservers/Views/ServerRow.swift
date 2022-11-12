@@ -9,7 +9,6 @@ struct ServerRow: View {
         HStack {
             Button(action: openUpdateServer) {
                 Text(server.getIp())
-                    .bold()
                     .padding(.horizontal, 4)
                 VStack(alignment: .leading) {
                     Text(server.getPlayerCount())
