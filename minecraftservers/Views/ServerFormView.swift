@@ -7,8 +7,6 @@ struct ServerFormView: View {
     
     @ObservedRealmObject var server: StoredServer
     
-    let serverTypes = ServerType.allCases
-    
     var isUpdating: Bool {
         server.realm != nil
     }
@@ -18,13 +16,12 @@ struct ServerFormView: View {
             Form {
                 TextField("IP", text: $server.ip)
                 Picker("Version", selection: $server.serverType) {
-                    ForEach(serverTypes, id: \.self) { serverType in
+                    ForEach(ServerType.allCases, id: \.self) { serverType in
                         Text(serverType.title)
                     }
                 }
             }
             .navigationTitle("Add a server")
-            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button(isUpdating ? "Done" : "Save") {
