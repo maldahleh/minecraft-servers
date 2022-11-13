@@ -25,6 +25,19 @@
 		4A75EB61292052080091B8BB /* DataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB60292052080091B8BB /* DataUpdater.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4A75EB772920698B0091B8BB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4A75EB0D292017570091B8BB /* minecraftservers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minecraftservers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A75EB10292017570091B8BB /* minecraftserversApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minecraftserversApp.swift; sourceTree = "<group>"; };
@@ -152,6 +165,7 @@
 				4A75EB09292017570091B8BB /* Sources */,
 				4A75EB0A292017570091B8BB /* Frameworks */,
 				4A75EB0B292017570091B8BB /* Resources */,
+				4A75EB772920698B0091B8BB /* Embed Watch Content */,
 			);
 			buildRules = (
 			);

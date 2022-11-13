@@ -8,7 +8,7 @@ class StoredServer: Object, ObjectKeyIdentifiable {
     @Persisted var serverData: Server?
 }
 
-// MARK - Getters
+// MARK: - Getters
 extension StoredServer {
     func getIp() -> String {
         guard let serverData = serverData, let hostname = serverData.hostname else {
@@ -35,7 +35,7 @@ extension StoredServer {
     }
 }
 
-// MARK - Utilities
+// MARK: - Utilities
 extension StoredServer {
     private func formatNumber(_ value: Int) -> String {
         let numberFormatter = NumberFormatter()

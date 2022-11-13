@@ -45,6 +45,7 @@ extension ServerFormView {
     }
 }
 
+// MARK: - Preview
 struct ServerFormView_Previews: PreviewProvider {
     static var previews: some View {
         ServerFormView(server: StoredServer())

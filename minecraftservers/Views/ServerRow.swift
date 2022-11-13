@@ -31,6 +31,7 @@ extension ServerRow {
     }
 }
 
+// MARK: - Preview
 struct ServerRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {

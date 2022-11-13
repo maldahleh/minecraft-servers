@@ -40,6 +40,7 @@ extension ServerListView {
     }
 }
 
+// MARK: - Preview
 struct ServerListView_Previews: PreviewProvider {
     static var previews: some View {
         ServerListView()

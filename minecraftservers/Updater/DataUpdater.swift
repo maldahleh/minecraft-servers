@@ -14,12 +14,14 @@ class DataUpdater {
         timer?.invalidate()
     }
     
-    @objc func updateServers() {
+    @objc private func updateServers() {
         let realm = try! Realm()
         for server in realm.objects(StoredServer.self) {
-            serverStatusAPI.fetchServerStatsFor(server) { data in
-                try! realm.write {
-                    server.serverData = data
+            DispatchQueue.main.async {
+                self.serverStatusAPI.fetchServerStatsFor(server) { data in
+                    realm.writeAsync {
+                        server.serverData = data
+                    }
                 }
             }
         }
