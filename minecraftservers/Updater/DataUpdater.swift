@@ -2,8 +2,8 @@ import Realm
 import RealmSwift
 
 class DataUpdater {
-    let serverStatusAPI = ServerStatusAPI()
-    var timer: Timer?
+    private let serverStatusAPI = ServerStatusAPI()
+    private var timer: Timer?
     
     func setupTimer() {
         updateServers()

@@ -5,13 +5,8 @@ enum ServerType: String, CaseIterable, PersistableEnum {
 }
 
 // MARK: - Properties
-extension ServerType {
-    var title: String {
-        switch self {
-        case .java:
-            return "Java"
-        case .bedrock:
-            return "Bedrock"
-        }
+extension ServerType: CustomStringConvertible {
+    var description: String {
+        return self.rawValue.capitalized
     }
 }

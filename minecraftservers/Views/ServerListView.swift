@@ -2,6 +2,8 @@ import SwiftUI
 import RealmSwift
 
 struct ServerListView: View {
+    private let updater = DataUpdater()
+    
     @State private var serverFormPresented = false
     @ObservedResults(StoredServer.self) var servers
     
@@ -30,6 +32,12 @@ struct ServerListView: View {
             }
         }
         .navigationTitle("Servers")
+        .onAppear() {
+            updater.setupTimer()
+        }
+        .onDisappear() {
+            updater.terminateTimer()
+        }
     }
 }
 

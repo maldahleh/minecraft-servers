@@ -17,7 +17,7 @@ struct ServerFormView: View {
                 TextField("IP", text: $server.ip)
                 Picker("Version", selection: $server.serverType) {
                     ForEach(ServerType.allCases, id: \.self) { serverType in
-                        Text(serverType.title)
+                        Text(serverType.description)
                     }
                 }
             }
