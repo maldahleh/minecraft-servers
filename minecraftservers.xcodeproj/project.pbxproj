@@ -26,13 +26,14 @@
 		4A75EB802922B1820091B8BB /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A75EB7F2922B1820091B8BB /* WidgetKit.framework */; };
 		4A75EB822922B1820091B8BB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A75EB812922B1820091B8BB /* SwiftUI.framework */; };
 		4A75EB852922B1820091B8BB /* widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB842922B1820091B8BB /* widgetBundle.swift */; };
-		4A75EB872922B1820091B8BB /* widgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB862922B1820091B8BB /* widgetLiveActivity.swift */; };
+		4A75EB872922B1820091B8BB /* ServerLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB862922B1820091B8BB /* ServerLiveActivity.swift */; };
 		4A75EB892922B1820091B8BB /* widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB882922B1820091B8BB /* widget.swift */; };
 		4A75EB8C2922B1830091B8BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A75EB8B2922B1830091B8BB /* Assets.xcassets */; };
 		4A75EB8E2922B1830091B8BB /* widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB8A2922B1820091B8BB /* widget.intentdefinition */; };
 		4A75EB8F2922B1830091B8BB /* widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB8A2922B1820091B8BB /* widget.intentdefinition */; };
 		4A75EB922922B1830091B8BB /* widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4A75EB7D2922B1820091B8BB /* widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4A75EB992922B2A00091B8BB /* ServerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB982922B2A00091B8BB /* ServerAttributes.swift */; };
+		4A75EB9E2922C1370091B8BB /* ServerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB9D2922C1370091B8BB /* ServerAttributes.swift */; };
+		4A75EB9F2922C1370091B8BB /* ServerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A75EB9D2922C1370091B8BB /* ServerAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,12 +90,12 @@
 		4A75EB7F2922B1820091B8BB /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		4A75EB812922B1820091B8BB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		4A75EB842922B1820091B8BB /* widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetBundle.swift; sourceTree = "<group>"; };
-		4A75EB862922B1820091B8BB /* widgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetLiveActivity.swift; sourceTree = "<group>"; };
+		4A75EB862922B1820091B8BB /* ServerLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerLiveActivity.swift; sourceTree = "<group>"; };
 		4A75EB882922B1820091B8BB /* widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widget.swift; sourceTree = "<group>"; };
 		4A75EB8A2922B1820091B8BB /* widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = widget.intentdefinition; sourceTree = "<group>"; };
 		4A75EB8B2922B1830091B8BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A75EB8D2922B1830091B8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A75EB982922B2A00091B8BB /* ServerAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAttributes.swift; sourceTree = "<group>"; };
+		4A75EB9D2922C1370091B8BB /* ServerAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +158,7 @@
 		4A75EB43292019780091B8BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4A75EB9C2922BFD80091B8BB /* Live Activities */,
 				4A75EB59292035C20091B8BB /* Network */,
 				4A75EB5C292048270091B8BB /* Mocks */,
 				4A75EB4F2920247A0091B8BB /* StoredServer.swift */,
@@ -220,9 +222,8 @@
 		4A75EB832922B1820091B8BB /* widget */ = {
 			isa = PBXGroup;
 			children = (
-				4A75EB972922B2810091B8BB /* Models */,
+				4A75EB9A2922B4460091B8BB /* Live Activities */,
 				4A75EB842922B1820091B8BB /* widgetBundle.swift */,
-				4A75EB862922B1820091B8BB /* widgetLiveActivity.swift */,
 				4A75EB882922B1820091B8BB /* widget.swift */,
 				4A75EB8A2922B1820091B8BB /* widget.intentdefinition */,
 				4A75EB8B2922B1830091B8BB /* Assets.xcassets */,
@@ -231,12 +232,20 @@
 			path = widget;
 			sourceTree = "<group>";
 		};
-		4A75EB972922B2810091B8BB /* Models */ = {
+		4A75EB9A2922B4460091B8BB /* Live Activities */ = {
 			isa = PBXGroup;
 			children = (
-				4A75EB982922B2A00091B8BB /* ServerAttributes.swift */,
+				4A75EB862922B1820091B8BB /* ServerLiveActivity.swift */,
 			);
-			path = Models;
+			path = "Live Activities";
+			sourceTree = "<group>";
+		};
+		4A75EB9C2922BFD80091B8BB /* Live Activities */ = {
+			isa = PBXGroup;
+			children = (
+				4A75EB9D2922C1370091B8BB /* ServerAttributes.swift */,
+			);
+			path = "Live Activities";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,9 +361,9 @@
 			files = (
 				4A75EB8F2922B1830091B8BB /* widget.intentdefinition in Sources */,
 				4A75EB502920247A0091B8BB /* StoredServer.swift in Sources */,
+				4A75EB9E2922C1370091B8BB /* ServerAttributes.swift in Sources */,
 				4A75EB61292052080091B8BB /* DataUpdater.swift in Sources */,
 				4A75EB452920199D0091B8BB /* ServerType.swift in Sources */,
-				4A75EB992922B2A00091B8BB /* ServerAttributes.swift in Sources */,
 				4A75EB4929201B710091B8BB /* Players.swift in Sources */,
 				4A75EB5B292046D90091B8BB /* ServerRow.swift in Sources */,
 				4A75EB13292017570091B8BB /* ServerListView.swift in Sources */,
@@ -372,7 +381,8 @@
 			files = (
 				4A75EB8E2922B1830091B8BB /* widget.intentdefinition in Sources */,
 				4A75EB892922B1820091B8BB /* widget.swift in Sources */,
-				4A75EB872922B1820091B8BB /* widgetLiveActivity.swift in Sources */,
+				4A75EB9F2922C1370091B8BB /* ServerAttributes.swift in Sources */,
+				4A75EB872922B1820091B8BB /* ServerLiveActivity.swift in Sources */,
 				4A75EB852922B1820091B8BB /* widgetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +526,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Servers";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -548,6 +559,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "MC Servers";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -578,6 +590,7 @@
 				INFOPLIST_FILE = widget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = widget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -605,6 +618,7 @@
 				INFOPLIST_FILE = widget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = widget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

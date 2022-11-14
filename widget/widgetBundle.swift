@@ -5,6 +5,9 @@ import SwiftUI
 struct widgetBundle: WidgetBundle {
     var body: some Widget {
         widget()
-        widgetLiveActivity()
+        
+        if #available(iOS 16.1, *) {
+            ServerLiveActivity()
+        }
     }
 }

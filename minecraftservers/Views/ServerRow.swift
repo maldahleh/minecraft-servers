@@ -7,7 +7,7 @@ struct ServerRow: View {
     
     var body: some View {
         HStack {
-            Button(action: openUpdateServer) {
+            Button(action: {}) {
                 VStack(alignment: .leading) {
                     Text(server.getIp())
                         .font(.headline)
@@ -21,6 +21,16 @@ struct ServerRow: View {
                 ServerFormView(server: server)
             }
         }
+        .simultaneousGesture(LongPressGesture().onEnded { _ in
+            if server.isActive() {
+                server.cancel()
+            } else {
+                server.start()
+            }
+        })
+        .simultaneousGesture(TapGesture().onEnded {
+            openUpdateServer()
+        })
     }
 }
 
